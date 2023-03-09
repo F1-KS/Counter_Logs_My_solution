@@ -36,7 +36,7 @@
                                 <state key="normal" title="dasda"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
                                 <connections>
-                                    <action selector="decreseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGR-m2-CpW"/>
+                                    <action selector="increaseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKB-Ix-UZT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-Y1-ULU">
@@ -44,7 +44,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
                                 <connections>
-                                    <action selector="increaseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iK6-ad-gSz"/>
+                                    <action selector="decreseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGm-Q2-d4Z"/>
                                 </connections>
                             </button>
                         </subviews>
