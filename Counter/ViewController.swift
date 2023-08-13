@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Counter
-//
-//  Created by m.daudov on 09.03.2023.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,15 +12,15 @@ class ViewController: UIViewController {
         
         print("View did load")
     }
-
+    
     @IBAction func decreseTapped(_ sender: Any) {
         print("Did tap decrease")
         guard let counterValue = counter else {
             return
         }
         counter = counterValue - 1
-        updateCounter()
         updateResetButton()
+        updateCounter()
     }
     
     @IBAction func increaseTapped(_ sender: Any) {
@@ -36,15 +29,15 @@ class ViewController: UIViewController {
             return
         }
         counter = counterValue + 1
-        updateCounter()
         updateResetButton()
+        updateCounter()
     }
     
     @IBAction func resetTapped(_ sender: Any) {
         print("Did tap reset")
         counter = 0
+        counerLabel.text = "\(counter ?? 0)"
         updateResetButton()
-        updateCounter()
     }
     
     private func updateResetButton() {
@@ -52,7 +45,7 @@ class ViewController: UIViewController {
             return
         }
         
-        resetButton.isEnabled = counter != 0 ? true : false
+        resetButton.isEnabled = counter != 0 ? true : false // тут нужно вместо знака меньше поставить знак не равно
         print("Did update reset button to: \(resetButton.isHidden)")
     }
     
@@ -65,8 +58,8 @@ class ViewController: UIViewController {
             counter = 0
             print("Did reset counter value")
         }
-        
         counerLabel.text = "\(counter ?? 0)"
+        updateResetButton()
     }
 }
 

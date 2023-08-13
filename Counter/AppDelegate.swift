@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Counter
-//
-//  Created by m.daudov on 09.03.2023.
-//
-
 import UIKit
 
 @main
